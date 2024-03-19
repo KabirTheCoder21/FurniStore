@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/guidelineEllipsTop"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineEllipsBottom"
+        app:layout_constraintStart_toStartOf="@id/guidelineEllipsLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEllipsRight"
+        android:src="@drawable/ellips"
+        app:layout_constraintDimensionRatio="1:1"/>
+
+    <TextView
+        android:id="@+id/tvRightAddressForShopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tvRightAddressMargin"
+        app:layout_constraintTop_toTopOf="@id/guidelineLefttexture"
+        app:layout_constraintStart_toStartOf="@id/guidelineEllipsLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEllipsRight"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineEllipsBottom"
+        android:text="@string/rightAdress"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:textSize="33sp" />
+    <TextView
+        android:id="@+id/tvQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvRightAddressForShopping"
+        app:layout_constraintEnd_toEndOf="@id/tvRightAddressForShopping"
+        app:layout_constraintTop_toBottomOf="@id/tvRightAddressForShopping"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="@string/quality"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="19sp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startButton"
+        style="@style/blueButtonStyle"
+        android:layout_width="@dimen/smallButtonWidth"
+        android:layout_height="@dimen/smallButtonHeight"
+        android:text="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvQuality"
+        app:layout_constraintStart_toStartOf="@id/tvQuality"
+        app:layout_constraintTop_toBottomOf="@id/tvQuality" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLefttexture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipsRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipsTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19015048" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipsBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

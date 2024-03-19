@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "260538357232",
+    "project_id": "e-commerce-c0e27",
+    "storage_bucket": "e-commerce-c0e27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260538357232:android:905df8264ace46e5727935",
+        "android_client_info": {
+          "package_name": "com.example.updateraho"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN_-pAPAuVLrBq5bmt44G-nKe8eItRBcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
